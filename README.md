@@ -9,7 +9,7 @@ contact: silvana.hunger@students.unibe.ch
 ## Introduction
 
 The project idea is to use machine learning methods to calculate the temperatures at different vegetation belts.
-This is done by using different regressor models for test and trainset of the different vegetation belts. The RMSE (Root Mean Square Error) describes how efficient the trained model is.
+This is done by using different regressor models for tests and trainsets of the different vegetation belts. The RMSE (Root Mean Square Error) describes how efficient the trained model is.
 
 The following models are used:
  - Linear Regressor
@@ -23,7 +23,7 @@ The measurements are from climate parameters and divided in January, April, July
 ## Usage
 
 The code is provided in a Jupiter Notebook. 
-For the input a unzip of the csv file samples6190.zip is necessary and the file needs to be in the same folder as the script.
+For the input a unzip of the csv file samples6190.zip is necessary and the file needs to be saved in the same folder as the script.
 
 If other input data is used, the following must be considered:
  - The attributes in the first row need to be the same
@@ -35,7 +35,7 @@ Change of the defining test ratio
 ## Results
 
 The script calculates the RMSE for different regressor models. This is done for four month and year of each belt.
-The results are saved in a csv file and can be viewed in the bar plot in Jupiter Notebook
+The results are saved in a csv file and can be viewed in the bar plot in Jupiter Notebook.
 
 Following the calculation, the "Extra Trees Regressor" results in the lowest RMSE, followed by the "Random Forest Model" and the "Decision Tree Regressor". The "Linear Regressor" results are the highest.
 For further calculations the use of the first two models is recommended. 
