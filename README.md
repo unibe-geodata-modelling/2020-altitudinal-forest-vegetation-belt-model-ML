@@ -2,7 +2,7 @@
 
 # Modelling of upwards-shifts of altitudinal forest vegetation bends due to climate change with machine-learning methods
 
-Author: Silvana Hunger - MA Student at the University Bern
+Author: Silvana Hunger - MA Student at the University of Bern
 
 contact: silvana.hunger@students.unibe.ch
 
@@ -10,6 +10,9 @@ contact: silvana.hunger@students.unibe.ch
 
 The project idea is to use machine learning methods to calculate the temperatures at different vegetation belts.
 This is done by using different regressor models for tests and trainsets of the different vegetation belts. The RMSE (Root Mean Square Error) describes how efficient the trained model is.
+
+The main fuction for the models is following: 
+T= f(KONT, RNORM, ETAETP, FOEHNH, GLOBRAD)
 
 The following models are used:
  - Linear Regressor
@@ -24,6 +27,7 @@ The measurements are from climate parameters and divided in January, April, July
 
 The code is provided in a Jupiter Notebook. 
 For the input a unzip of the csv file samples6190.zip is necessary and the file needs to be saved in the same folder as the script.
+- The csv is an excerpt from the dataset, it consists of one record for each vegetation belt.
 
 If other input data is used, the following must be considered:
  - The attributes in the first row need to be the same
